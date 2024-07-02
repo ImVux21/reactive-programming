@@ -1,4 +1,4 @@
-package com.vudd.reactiveprogrammingplayground.publisher;
+package com.vudd.reactiveprogrammingplayground.sec01.publisher;
 
 import org.reactivestreams.Publisher;
 import org.reactivestreams.Subscriber;

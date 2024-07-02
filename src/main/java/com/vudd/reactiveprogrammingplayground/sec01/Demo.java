@@ -1,7 +1,7 @@
-package com.vudd.reactiveprogrammingplayground;
+package com.vudd.reactiveprogrammingplayground.sec01;
 
-import com.vudd.reactiveprogrammingplayground.publisher.PublisherImpl;
-import com.vudd.reactiveprogrammingplayground.subscriber.SubscriberImpl;
+import com.vudd.reactiveprogrammingplayground.sec01.publisher.PublisherImpl;
+import com.vudd.reactiveprogrammingplayground.sec01.subscriber.SubscriberImpl;
 
 import java.time.Duration;
 

@@ -1,4 +1,4 @@
-package com.vudd.reactiveprogrammingplayground.subscriber;
+package com.vudd.reactiveprogrammingplayground.sec01.subscriber;
 
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
