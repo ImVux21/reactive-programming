@@ -12,11 +12,5 @@ public class Lec02MonoJust {
         subscriber.getSubscription().request(5);
         subscriber.getSubscription().request(5);
         subscriber.getSubscription().cancel();
-
-//        mono.subscribe(
-//            item -> System.out.println("Received: " + item),
-//            err -> System.out.println("Error: " + err),
-//            () -> System.out.println("Completed")
-//        );
     }
 }
