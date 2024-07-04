@@ -1,9 +1,13 @@
 package com.vudd.reactiveprogrammingplayground.common;
 
+import com.github.javafaker.Faker;
 import org.reactivestreams.Subscriber;
-import reactor.core.publisher.Mono;
+
+import java.time.Duration;
 
 public class Util {
+
+    private static final Faker faker = Faker.instance();
 
     // <T> at the front of Subscriber<T> is a generic type declaration. It tells the compiler that the type T is a generic type.
     // It denotes that Subscriber<T> is a generic type that can be parameterized with some type.
@@ -15,13 +19,15 @@ public class Util {
         return new DefaultSubscriber<>("");
     }
 
-    public static void main(String[] args) {
-        var mono = Mono.just("Vu").map(i -> i + i);
-        mono.subscribe(
-            subscriber()
-        );
-        mono.subscribe(
-            subscriber("Vudd")
-        );
+    public static Faker faker() {
+        return faker;
+    }
+
+    public static void sleepSeconds(int seconds) {
+        try {
+            Thread.sleep(Duration.ofSeconds(seconds));
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
