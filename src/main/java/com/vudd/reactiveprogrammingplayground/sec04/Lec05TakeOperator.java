@@ -8,7 +8,18 @@ public class Lec05TakeOperator {
 //        takeUtil();
 //        takeLast();
         // take();
-        takeWhile();
+//        takeWhile();
+
+        Flux.range(1, 100)
+                .take(25)
+                .log("take25")
+                .takeWhile(i -> i < 10)
+                .log("takeWhile")
+                .takeUntil(i -> i > 1 && i < 5)
+                .log("takeUntil")
+                .take(3)
+                .log("take3")
+                .subscribe(Util.subscriber());
     } // take, takeUtil, takeLast, takeWhile
 
     private static void take() {
